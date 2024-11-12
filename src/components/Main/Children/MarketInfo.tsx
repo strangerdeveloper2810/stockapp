@@ -1,6 +1,6 @@
 import React from 'react';
 
-const StockInfo: React.FC = () => {
+const MarketInfo: React.FC = () => {
   return (
     <section className="flex flex-col gap-1 px-5 py-0 mt-1 w-full bg-gray-900 rounded max-md:max-w-full">
       <div className="flex gap-8 items-center py-1 w-full max-md:max-w-full">
@@ -13,7 +13,7 @@ const StockInfo: React.FC = () => {
               className="object-contain shrink-0 self-stretch my-auto w-6 rounded-full aspect-square"
             />
             <div className="flex gap-1 items-center self-stretch my-auto">
-              <h1 className="self-stretch my-auto">VNIDEX</h1>
+              <div className="self-stretch my-auto">VNIDEX</div>
               <img
                 loading="lazy"
                 src="https://cdn.builder.io/api/v1/image/assets/TEMP/e0b5233d1a997b9f3f4a20842c0d68ccc3b405cca49a2eb7877071ffc5032e50?placeholderIfAbsent=true&apiKey=22d8154f16e04b8ab0bd7b0df307bf61"
@@ -42,7 +42,7 @@ const StockInfo: React.FC = () => {
                   alt=""
                   className="object-contain shrink-0 self-stretch my-auto aspect-square w-[13px]"
                 />
-                <div>-0.11%</div>
+                <div className="self-stretch my-auto">-0.11%</div>
               </div>
             </div>
             <div className="flex flex-col justify-center self-stretch my-auto w-[35px]">
@@ -69,14 +69,14 @@ const StockInfo: React.FC = () => {
                 97.90
               </div>
             </div>
-            <div className="shrink-0 self-stretch my-auto w-0 h-8 border border-solid bg-slate-800 border-slate-800"></div>
+            <div className="shrink-0 self-stretch my-auto w-0 h-8 border border-solid bg-slate-800 border-slate-800" />
             <div className="flex flex-col justify-center self-stretch my-auto w-[57px]">
               <div className="text-xs font-medium leading-relaxed text-gray-400">
                 Giá trị khớp
               </div>
               <div className="flex items-center w-full">
                 <div className="self-stretch my-auto text-sm font-semibold leading-none text-white">
-                  85.340
+                  85.340{' '}
                 </div>
                 <div className="self-stretch my-auto text-xs font-medium leading-relaxed text-gray-400">
                   tỷ
@@ -104,4 +104,4 @@ const StockInfo: React.FC = () => {
   );
 };
 
-export default StockInfo;
+export default MarketInfo;

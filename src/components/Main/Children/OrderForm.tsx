@@ -1,7 +1,8 @@
 import React from 'react';
+
 const OrderForm: React.FC = () => {
   return (
-    <section className="flex overflow-hidden flex-col flex-1 p-2 mt-1 w-full bg-gray-900 rounded max-md:max-w-full">
+    <div className="flex overflow-hidden flex-col flex-1 p-2 mt-1 w-full bg-gray-900 rounded max-md:max-w-full">
       <div className="flex flex-wrap gap-10 justify-between items-center w-full max-md:max-w-full">
         <div className="flex self-stretch my-auto text-xs min-h-[26px] min-w-[240px]">
           <div className="flex gap-2.5 justify-center items-center px-2 h-full font-semibold border-b-2 border-solid border-b-emerald-100">
@@ -20,18 +21,22 @@ const OrderForm: React.FC = () => {
           </div>
         </div>
         <div className="flex gap-1 items-center self-stretch my-auto">
-          <img
-            loading="lazy"
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/8edef92cd45b97458d8dd2401e248d8e475dc2a1057350573dcd18472f4483ec?placeholderIfAbsent=true&apiKey=22d8154f16e04b8ab0bd7b0df307bf61"
-            alt="Option 1"
-            className="object-contain shrink-0 self-stretch my-auto w-4 aspect-square"
-          />
-          <img
-            loading="lazy"
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/374894cc171fd67ff99b067fbac319ece313d605d0c45beb4fef29a9782de6b9?placeholderIfAbsent=true&apiKey=22d8154f16e04b8ab0bd7b0df307bf61"
-            alt="Option 2"
-            className="object-contain shrink-0 self-stretch my-auto w-4 aspect-square"
-          />
+          <button aria-label="Refresh">
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/8edef92cd45b97458d8dd2401e248d8e475dc2a1057350573dcd18472f4483ec?placeholderIfAbsent=true&apiKey=22d8154f16e04b8ab0bd7b0df307bf61"
+              alt=""
+              className="object-contain shrink-0 self-stretch my-auto w-4 aspect-square"
+            />
+          </button>
+          <button aria-label="More options">
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/374894cc171fd67ff99b067fbac319ece313d605d0c45beb4fef29a9782de6b9?placeholderIfAbsent=true&apiKey=22d8154f16e04b8ab0bd7b0df307bf61"
+              alt=""
+              className="object-contain shrink-0 self-stretch my-auto w-4 aspect-square"
+            />
+          </button>
         </div>
       </div>
       <div className="flex flex-wrap gap-10 justify-between mt-4 w-full max-md:max-w-full">
@@ -40,18 +45,10 @@ const OrderForm: React.FC = () => {
             <img
               loading="lazy"
               src="https://cdn.builder.io/api/v1/image/assets/TEMP/554ef85c8102725a90158058d391b9b38603d8bbbff52a410c90fb6ab10afcf2?placeholderIfAbsent=true&apiKey=22d8154f16e04b8ab0bd7b0df307bf61"
-              alt="Search icon"
+              alt=""
               className="object-contain shrink-0 self-stretch my-auto w-5 aspect-[1.25]"
             />
-            <label htmlFor="stockCode" className="sr-only">
-              Mã CK
-            </label>
-            <input
-              type="text"
-              id="stockCode"
-              placeholder="Mã CK"
-              className="self-stretch my-auto bg-transparent border-none outline-none"
-            />
+            <div className="self-stretch my-auto">Mã CK</div>
           </div>
         </div>
         <div className="flex gap-4 h-full text-xs">
@@ -60,7 +57,7 @@ const OrderForm: React.FC = () => {
             <img
               loading="lazy"
               src="https://cdn.builder.io/api/v1/image/assets/TEMP/9eba65a1371dcb61b1d3961f069ec6f6b2966d8f140426b363f32f1e1e7c3ed3?placeholderIfAbsent=true&apiKey=22d8154f16e04b8ab0bd7b0df307bf61"
-              alt="Dropdown icon"
+              alt=""
               className="object-contain shrink-0 self-stretch my-auto w-4 aspect-[1.14]"
             />
           </div>
@@ -69,7 +66,7 @@ const OrderForm: React.FC = () => {
               <img
                 loading="lazy"
                 src="https://cdn.builder.io/api/v1/image/assets/TEMP/4a49033fc89575344ab41d925a46b563c9a2c8e50de8adf393565560d5f3e02b?placeholderIfAbsent=true&apiKey=22d8154f16e04b8ab0bd7b0df307bf61"
-                alt="Buy icon"
+                alt=""
                 className="object-contain shrink-0 self-stretch my-auto w-6 aspect-[1.33]"
               />
               <div className="self-stretch my-auto">Mua</div>
@@ -78,7 +75,7 @@ const OrderForm: React.FC = () => {
               <img
                 loading="lazy"
                 src="https://cdn.builder.io/api/v1/image/assets/TEMP/3f85d87b3fa2fba5677505dd67d1a504350f95b8523789d0d6414401191c3a33?placeholderIfAbsent=true&apiKey=22d8154f16e04b8ab0bd7b0df307bf61"
-                alt="Sell icon"
+                alt=""
                 className="object-contain shrink-0 self-stretch my-auto w-6 aspect-[1.33]"
               />
               <div className="self-stretch my-auto">Bán</div>
@@ -86,7 +83,7 @@ const OrderForm: React.FC = () => {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

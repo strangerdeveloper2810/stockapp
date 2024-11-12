@@ -6,4 +6,12 @@ interface NewsFeedType {
   time: string;
 }
 
-export type { NewsFeedType };
+interface Stock {
+  symbol: string;
+  full_name: string;
+  description: string;
+  exchange: string;
+  type: string;
+}
+
+export type { NewsFeedType, Stock };

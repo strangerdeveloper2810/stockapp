@@ -1,31 +1,25 @@
 import React from 'react';
-import OverviewChart from './OverviewChart';
-import OrderForm from './OrderForm';
-import OrderBook from './OrderBook';
-import TradeHistory from './TradeHistory';
-
-interface IMainProps {
+import { Chart, OrderBook, TradeHistory, OrderForm } from './Children';
+interface MainProps {
   children: React.ReactNode;
 }
 
-const Main: React.FC<IMainProps> = ({ children }) => {
+const Main: React.FC<MainProps> = () => {
   return (
-    <div className="flex flex-col min-w-[240px] w-[1662px] max-md:max-w-full">
+    <section className="flex flex-col min-w-[240px] w-[1662px] max-md:max-w-full">
       <div className="flex flex-wrap flex-1 gap-1 size-full max-md:max-w-full">
         <div className="flex flex-col flex-1 shrink basis-0 min-w-[240px] max-md:max-w-full">
           <div className="flex flex-1 gap-1 size-full max-md:max-w-full">
             <div className="flex flex-col flex-1 shrink w-full basis-0 min-w-[240px] max-md:max-w-full">
-              {children}
-              {/* <OrderForm /> */}
-            </div>
-            <div className="flex flex-col flex-1 shrink basis-0 min-w-[240px]">
+              {/* <Chart /> */}
               {/* <OrderBook /> */}
               {/* <TradeHistory /> */}
             </div>
           </div>
         </div>
+        {/* <OrderForm /> */}
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -14,6 +14,7 @@ export { default as cart } from './cart.svg';
 export { default as category } from './category.svg';
 export { default as arrowDown } from './arrowDown.svg';
 export { default as arrowDownPercent } from './arrowDownPercent.svg';
+export { default as arrowUpPercent } from './arrowUpPercent.svg';
 export { default as close } from './close.svg';
 export { default as scale } from './scale.svg';
 export { default as filter } from './Filter.svg';
