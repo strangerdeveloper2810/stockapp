@@ -1,26 +1,22 @@
 import React from 'react';
-import {
-  Header,
-  ListStock,
-  FavoriteStock,
-  Main,
-  RightSidebar,
-  Sidebar,
-} from '@/components';
+import { Header, ListStock, FavoriteStock, Sidebar, Main } from '@/components';
+
 interface IHomeLayoutProps {
   children: React.ReactNode;
 }
+
 const HomeLayout: React.FC<IHomeLayoutProps> = ({ children }) => {
   return (
-    <div className="flex flex-col gap-1 px-1 py-0">
+    <div className="flex flex-col h-screen">
       <Header />
       <ListStock />
       <FavoriteStock />
-      <main className="flex flex-wrap flex-1 gap-1 pb-2 mt-1 h-full max-md:max-w-full">
-        <Main>{children}</Main>
-        {/* <RightSidebar /> */}
+      <div className="flex flex-1 h-full">
+        <div className="flex-1">
+          <Main>{children}</Main>
+        </div>
         <Sidebar />
-      </main>
+      </div>
     </div>
   );
 };
