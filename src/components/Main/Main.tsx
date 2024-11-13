@@ -1,4 +1,5 @@
 import React from 'react';
+import { TradingViewWidget } from './Children';
 // import { Chart, OrderBook, TradeHistory, OrderForm } from './Children';
 
 interface MainProps {
@@ -6,7 +7,11 @@ interface MainProps {
 }
 
 const Main: React.FC<MainProps> = ({ children }) => {
-  return <section className="flex flex-col w-full">{children}</section>;
+  return (
+    <section className="flex flex-col w-full">
+      <TradingViewWidget />
+    </section>
+  );
 };
 
 export default Main;
